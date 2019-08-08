@@ -18,7 +18,7 @@ resource "aws_instance" "jenkins" {
             "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
             "sudo yum install jenkins -y",
             "sudo systemctl start jenkins",
-            "sudo systemctl enabled jenkins"
+            "sudo systemctl enable jenkins"
         ]
     }
 }
